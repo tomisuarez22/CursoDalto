@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/CSS INTERMEDIO/images/css-3_732190.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Herencia, cascada y especifidad</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="nav__item"><a href="/CSS INTERMEDIO/index.html" class="item__link">Volver a la página principal</a></div>
+        </nav>
+
+    </header>
+
+    <h1>Herencia, cascada y especifidad</h1>
+    <h2 class="temas">Herencia</h2>
+    <p class="text-web">La herencia en CSS define que algunos valores de las propiedades que se han establecidos para los elementos padre, los <b>heredan</b> los elementos hijo, mientras que los otros que no son familiares no.</p>
+    <h2 class="temas">Herencia: inherit e initial</h2>
+    <p class="text-web">CSS nos proporciona cuatro valores de propiedad universales para el CONTROL DE LA HERENCIA.</p>
+    <h3 class="title-list">Valores de herencia</h3>
+    <ul>
+        <li>inherit</li>
+        <p class="text-list">Este valor quiere decir que el elemento va a adaptar el valor de su elemento padre. <b>(activa la herencia)</b>.</p>
+        <li>initial</li>
+        <p class="text-list">Este valor define que no importa si hay un elemento padre con propiedades distintas, este no adapta los valores de su padre y queda con los valores por defecto del navegador.</p>
+        <li>unset</li>
+        <p class="text-list">Restablece la propiedad a su valor natural, lo que significa que si la propiedad se hereda de forma natural, actúa como inherit, y en caso contrario como initial.</p>
+        <li>revert</li>
+        <p class="text-list">Esta propiedad revierte el valor en cascada de la propiedad de su valor actual al valor que la propiedad habría tenido si el origen del estilo actual no hubiera realizado cambios en el elemento actual.</p>
+    </ul>
+
+    <h2 class="temas">Especifidad</h2>
+    <p class="text-web">Define la prioridad de los selectores en CSS. Por ejemplo, si nosotros definimos la propiedad de un elemento seleccionando solo por <b>elemento</b>, y luego definimos otra propiedad a este elemento seleccionado pero por <b>clase</b>, el elemento quedaría con las propiedades asignadas en el elemento que seleccionamos por clase ya que el selector de clase es más <b>específico</b>.</p>
+
+    <h3 class="subtemas">CSS y su especifidad</h3>
+    <p class="text-web">Las distintas formas de modificar en CSS tienen diferentes prioridades. Van del 1 la más importante al 6 que es el menos importante.</p>
+    <ol>
+        <li>!important</li>
+        <p class="text-list">Esta declaración es la más prioritaria. Es decir al nosoros declarar esto luego de una regla, el elemento se va a modificar si o si, sin darle importancia a las demas modificaciones que se hayan realizado o a realizar.</p>
+        <li>Atributo style=""</li>
+        <p class="text-list">Este atributo lo declaramos en HTML y dentro de el podemos asignar una propiedad al elemento.</p>
+        <li>Etiqueta <b>"style"</b></li>
+        <p class="text-list">Dentro de esta etiqueta en nuestro archivo HTML, podemos asignar las propiedades a los elementos que querramos.</p>
+        <li>En nuestro archivo style.css</li>
+        <p class="text-list">Dentro de este archivo podemos asignar las propiedades a los elementos de HTML.</p>
+        <li>Modificaciones que haga el usuario desde el navegador</li>
+        <p class="text-list">El usuario puede modificar el estilo de la página web a través de una extensión que le permita modificar el archivo CSS de la página.</p>
+        <li>El navegador por predeterminado</li>
+        <p class="text-list">Estas son las modificaciones que ya hace por defecto el navegador y por supuesto las menos especificas.</p>
+    </ol>
+
+    <h2 class="temas">Cascada en CSS</h2>
+    <p class="text-web">El concepto de cascada en CSS nos dice que el orden de las acciones que nosotros realicemos en CSS, <b>importa</b>. Es decir pueden aplicarse dos propiedades a un mismo elemento por separado y CSS va a tomar la que esté aplicada al último.</p>
+
+</body>
+</html>

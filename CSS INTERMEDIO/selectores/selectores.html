@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/CSS INTERMEDIO/images/css-3_732190.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Selectores en CSS</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="menu__item"><a href="/CSS INTERMEDIO/index.html" class="item__link">Principal</a></li>
+                <li class="menu__item"><a href="/CSS INTERMEDIO/selectores/pseudoelementos.html" class="item__link">Pseudoelementos</a></li>
+                <li class="menu__item"><a href="/CSS INTERMEDIO/selectores/pseudoclases.html" class="item__link">Pseudoclases</a></li>
+                <li class="menu__item"><a href="" class="item__link link--button">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Selectores en CSS</h1>
+    <p>Existen distintas formas de seleccionar un elemento en <b>CSS</b>.</p>
+
+    <h2>
+        Formas de selección en CSS
+    </h2>
+
+    <ul>
+        <li>Selección de img por atributo</li>
+        <p class="text-list">Podemos seleccionar los elementos según el atributo que posean. mediante el nombre del elemento y <b>[atributo="valor"]</b>. Ej: img[src="imagen.png"]{}".</p>
+        <ul>
+            <li>Si nosotros colocamos img[src<b>$=</b>"valor"]</li>
+            <p class="text-list">Se seleccionan solo las imagenes que TERMINAN con ese valor. Por ejemplo si nosotros ponemos img[src<b>$=</b>".png"] este va a seleccionar solo las imágenes .png.</p>
+            <li>Si nosotros colocamos img[src<b>^=</b>"valor"]</li>
+            <p class="text-list">Se seleccionan solo las imagenes que COMIENZAN con ese valor. Por ejemplo si nosotros ponemos [src<b>^=</b>"tomas"] este va a seleccionar solo las imágenes que comiencen con tomas.</p>
+        </ul>
+        <li>Selección de hijo general</li>
+        <p class="text-list">Podemos seleccionar elementos que estén dentro de otro elemento ya sea hijo, nieto, tataranieto, etc. Para hacerlo, basta con poner primero el nombre del elemento contenedor y luego el nombre del elemento que esté dentro de ese contenedor. Ejemplo: ul li{} <br>
+        Aquí se seleccionan todos los elementos <b>li</b> que estén dentro de el elemento <b>ul</b>.</p>
+        <li>Selección de hijo directo</li>
+        <p class="text-list">Podemos seleccionar elementos que sean directamente hijos de un elemento. Para hacerlo, basta con poner primero el nombre del elemento padre seguido de un <b>></b> y luego el nombre del elemento hijo. Ejemplo: ul > li{}.
+        </p>
+        <li>Selección de hermano adyacente</li>
+        <p class="text-list">Podemos seleccionar elementos hermanos. Es decir el próximo elemento que sigue de otro. Para hacerlo, debemos poner el primer elemento seguido de un <b>+</b>, y luego ponemos el segundo elemento que va a ser el que se seleccione. Ejemplo: h1 + p{}. Aqui va a seleccionar unicamente los elementos <b>p</b> que estén después de un elemento <b>h1</b>. </p>
+        <li>Selección por hermanos generales</li>
+        <p class="text-list">Podemos seleccionar todos los elementos que vengan después de otro en específico. Para hacerlo, debemos poner el primer elemento seguido de un <b>~</b> y luego colocar el elemento que va a ser el que se seleccione. Ejemplo: h1 ~ p{}. Aquí va a seleccionar todos los elementos <b>p</b> que vayan después de un <b>h1</b>.</p>
+    </ul>
+</body>
+</html>

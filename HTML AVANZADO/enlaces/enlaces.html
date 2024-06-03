@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Enlaces Avanzado</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="/HTML AVANZADO/index.html" class="navigation-pages"><< Volver a la página principal</a>
+        </div>
+        
+        <div>
+            <a href="/HTML AVANZADO/textarea/textarea.html" class="navigation-pages"><< Volver a TextArea</a>
+        </div>
+        
+    </header>
+
+    <h1>Enlaces Avanzado</h1>
+    <p class="text-web">Como sabemos, la etiqueta <b>a</b> permite redirigir a los usuarios a distintas páginas y sectores de la web. Pero tambien tiene otras funcionalidades.</p>
+
+    <ul>
+        <li>Dirigirse a una parte de la misma ventana.</li>
+        <p class="text-list">Mediante una ID podemos dirigirnos a una parte de la misma ventana. Solo debemos enlazar el ID de la etiqueta que querramos dirigir a el atributo <b>href</b> de la etiqueta <b>a</b>.</p>
+        <li>Descargar un archivo que queramos</li>
+        <p class="text-list">Mediante el atributo booleano "<b>download</b>" podemos descargar el archivo que esté enlazado en el atributo <b>href</b>.</p>
+        <li>Mandar un mail</li>
+        <p class="text-list">Mediante el atributo <b>"mailto:correo@gmail.com"</b> nos abre automáticamente nuestra aplicación para enviar correos electrónicos a la dirección detallada.</p>
+        <li>Llamar a un telefono determinado</li>
+        <p class="text-list">Mediante el atributo <b>"tel:+54123456789"</b> nos abre automáticamente una aplicación de llamada para llamar a el numero telefónico seleccionado.</p>
+    </ul>
+
+    <h2 class="temas">Seguridad en nuestra página web</h2>
+    <p class="text-web">Mediante el atributo <b>"rel"</b> podemos definir que tipo de modificaciones y datos de nuestra página web permitimos al usuario. Con distintos valores podemos restringirle el acceso al usuario.</p>
+    <h3 class="subtitles">Valores para restringir distintos accesos en las etiquetas "a".</h3>
+    <ul>
+        <li>rel="noreferrer"</li>
+        <p class="text-list">Este atributo evita pasar la información de referencia al sitio web destino eliminando la información de referencia del encabezado HTTP.
+        </p>
+        <li>rel="nofollow"</li>
+        <p class="text-list">Este atributo le indica a los motores de búsqueda que no pasen ningún PageRank de una página a otra.</p>
+        <li>rel="noopener"</li>
+        <p class="text-list">Este atributo impide que la página de apertura obtenga cualquier tipo de acceso a la página principal.</p>
+    </ul>
+
+</body>
+</html>

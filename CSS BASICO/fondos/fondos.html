@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fondos</title>
+</head>
+<body>
+
+    <header>
+        <a href="/CSS BASICO/principal/index.html" class="navigations-pages"><< Volver a la página principal</a>
+    </header>
+
+    <h1>Fondos, Gradientes y Sombras</h1>
+    <p class="text-web">CSS nos permite agregar y personalizar distintos fondos para nuestra página web. Podemos agregar imágenes, degradados e incluso sombras a distintos elementos.</p>
+    <p class="text-web">Existen distintas propiedades tipo "background" para personalizar los fondos.</p>
+
+    <div class="div-example"></div>
+
+    <h2 class="subtitle-clasification">Propiedades:</h2>
+    <ul>
+        <li>background-color</li>
+        <p class="text-list">Define el color de fondo de un elemento. Puede ser un color o la palabra clave "transparent".</p>
+        <li>background-image</li>
+        <p class="text-list">Establece una o más imagenes de fondo para un elemento.</p>
+        <li>background-size</li>
+        <p class="text-list">Especifica el tamaño de las imagenes de fondo.</p>
+        <li>background-position</li>
+        <p class="text-list">Define la posición inicial de la imagen de fondo especificada.</p>
+        <li>background-repeat</li>
+        <p class="text-list">Define como se repiten los fondos del documento. Puede ser repetido sobre el eje X, Y, ambos ejes o puede no ser repetido.</p>
+        <li>background-attachment</li>
+        <p class="text-list">Determina si la posición de la imagen será fija dentro de la pantalla o se desplazará con su bloque contenedor. Sus posibles valores son:</p>
+        <ul>
+            <li>scroll</li>
+            <p class="text-list">Es el valor predeterminado, se moverá dentro de la pantalla junto al bloque que la contiene.</p>
+            <li>fixed</li>
+            <p class="text-list">No se moverá dentro de la pantalla junto al bloque que la contiene.</p>
+        </ul>
+    </ul>
+
+    <h2 class="subtitle">Propiedad "background" como "shorthand"</h2>
+    <p class="text-web">Podemos utilizar como "shorthand" la propiedad background. De manera que su sintáxis sería: <br>
+    <span class="sintaxis-background">background: url(imagen) background-position background-size background-repeat background-attachment background-color</span></p>
+
+    <h2 class="subtitle">Gradientes</h2>
+    <h2 class="subtitle">Gradiente lineal</h2>
+    <p class="text-web">Mediante la funcion "linear-gradient(dirección de gradiente, color inicio, color final)" podemos agregar un degradado desde un color hacia otro.</p>
+    <div class="div-gradient">
+        <h2 class="title-div">Texto</h2>
+    </div>
+    <p class="aclaration">background: linear-gradient(transparent, #f009);</p>
+    <p class="aclaration">Podemos agregarle más de un color a la función si queremos.</p>
+
+    <h2 class="subtitle">Gradiente radial</h2>
+    <p class="text-web">Mediante la función "radial-gradient(color inicio, color final)" podemos agregar un degradado de forma RADIAL.</p>
+    <div class="div-gradient radial">
+        <h2 class="title-div radial-div">Texto</h2>
+    </div>
+
+    <h2 class="subtitle">Sombras</h2>
+    <p class="text-web">Las sombras le dan realismo a nuestra página web y apariencia. Podemos darle sombras a las cajas, textos o componentes.</p>
+    <h2 class="subtitle">box-shadow y text-shadow</h2>
+    <div class="box-shadow">
+        <img src="/HTML BASICO/img/FOTO MIA.jpeg" alt="tomas suarez" class="img-tomas">
+        <h2 class="subtitle-div">TITULO</h2>
+        <p class="text-div">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum ad consectetur, repellat, ab veritatis magnam qui eos quos, illum rerum ea provident odio dolorem. Consectetur sequi repellendus omnis exercitationem quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam obcaecati voluptatum vitae, maxime in cupiditate quis aperiam nostrum totam quae, numquam mollitia id inventore perspiciatis autem, quo nisi odit doloribus.</p>
+    </div>
+    <p class="aclaration">box-shadow: 0px 0px 10px 3px #0004; <br>
+        En este caso su sintáxis es: <br>
+        box-shadow: horizontal vertical desenfoque expansión color-sombra
+    </p>
+    <p class="aclaration">text-shadow: 0px 0px 5px #0005; <br>
+        En este caso su sintáxis es: <br>
+        box-shadow: horizontal vertical desenfoque color-sombra
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+html{
+    font-family: 'Courier New', Courier, monospace;
+    color: #e7eed0;
+}
+
+body{
+    background-color: #51425f;
+}
+
+h1, .temas{
+    font-size: 50px;
+    color: #e7eed0;
+    text-shadow: 0 0 3px #e7eed0;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.item-list, li{
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.title-list{
+    font-size: 30px;
+    text-decoration: underline;
+    text-shadow: 0 0 4px #e7eed0;
+}
+
+li{
+    font-weight: 100;
+}
+
+.temas{
+    font-size: 40px;
+}
+
+.text-web{
+    font-size: 30px;
+    text-align: center;
+}
+
+.clasification-title{
+    font-size: 37px;
+    text-decoration: underline;
+}
+
+.text-clasification{
+    font-size: 25px;
+}
+
+.aclaration-text{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.navigation-pages{
+    font-size: 25px;
+    color: #e7eed0;
+    text-shadow: 0 0 3px #e7eed0;
+}
+
+

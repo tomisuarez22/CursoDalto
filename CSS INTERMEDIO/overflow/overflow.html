@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/CSS INTERMEDIO/images/css-3_732190.png">
+    <title>Overflow en CSS</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="/CSS INTERMEDIO/index.html" class="item__link">Principal</a></li>
+                <li class="nav__item"><a href="#" class="item__link">Temas</a></li>
+                <li class="nav__item"><a href="#" class="item__link">Ayuda</a></li>
+                <li class="nav__item"><a href="#" class="item__link">Contacto</a></li>
+                <li class="nav__item"><a href="#" class="item__link link--button">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="title">Overflow</h1>
+    <p class="text-web">La propiedad Overflow en CSS nos permite personalizar la forma en la que se guarda y muestra un contenido dentro de un contenedor.</p>
+    <div class="container">
+        <h2 class="container__title">Texto</h2>
+        <p class="container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate totam cupiditate accusamus impedit expedita iusto dolores id ratione magnam quaerat! Architecto maiores, dignissimos modi perspiciatis pariatur aspernatur hic veniam doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, neque. Consequuntur praesentium rerum dignissimos recusandae iure doloribus nesciunt nobis rem officia veniam ducimus aperiam debitis, sit eaque, ad fugit voluptates?</p>
+    </div>
+
+    <h2 class="subtitle">Overflow y sus propiedades</h2>
+    <p class="text-web">Overflow nos proporciona distintos valores y propiedades para definir el comportamiento de los contenidos dentro de los contenedores.</p>
+    <ul class="list">
+        <li class="list__item">overflow-x</li>
+        <p class="item__text">Especifica y modifica el comportamiento en el eje x.</p>
+        <li class="list__item">overflow-y</li>
+        <p class="item__text">Especifica y modifica el comportamiento en el eje y.</p>
+    </ul>
+
+    <h2 class="subtitle">Posibles valores de overflow</h2>
+    <ul class="list">
+        <li class="list__item">visible</li>
+        <p class="item__text">Valor por defecto. El contenido no es recortado, podría ser dibujado fuera de la caja contenedora.</p>
+        <li class="list__item">hidden</li>
+        <p class="item__text">El contenido es recortado y no se muestran barras de posición.</p>
+        <li class="list__item">scroll</li>
+        <p class="item__text">El contenido es recortado y el navegador web usa las barras de desplazamiento, se haya recortado el contenido o no.</p>
+        <li class="list__item">auto</li>
+        <p class="item__text">Depende del agente de usuario. El navegador provee barras de desplazamiento si hay contenido excedente, en el caso de que no no pasa nada.</p>
+    </ul>
+
+    <h2 class="subtitle">Control de flujo de texto: propiedad white-space</h2>
+    <p class="text-web">CSS nos permite modificar y controlar el flujo de texto de un parrafo. Permitiendo distintos saltos de línea entre otras cosas.</p>
+    <ul class="list">
+        <li class="list__item">normal</li>
+        <p class="item__text">Valor por defecto, las líneas se dividen según sea necesario para llenar los cuadros de línea.</p>
+        <li class="list__item">nowrap</li>
+        <p class="item__text">Elimina los saltos de línea.</p>
+        <li class="list__item">pre</li>
+        <p class="item__text">Los saltos de línea están definidos según como el desarrollador redactó el texto y permite que el texto se desborde.</p>
+        <li class="list__item">pre-wrap</li>
+        <p class="item__text">Los saltos de línea están definidos según como el desarrollador redactó el texto y NO permite que el texto se desborde.</p>
+        <li class="list__item">pre-line</li>
+        <li class="list__item">break-spaces</li>
+    </ul>
+
+    
+</body>
+</html>

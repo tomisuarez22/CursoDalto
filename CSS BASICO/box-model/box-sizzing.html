@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="box-sizzing.css">
+    <title>Box Sizzing</title>
+</head>
+<body>
+    <header>
+        <a href="/CSS BASICO/selectores/index.html" class="navigations-pages"><< Volver a la página principal</a>
+    </header>
+
+    <h1>Propiedad Box Sizzing</h1>
+    <p>La propiedad Box Sizzing define como se debe expandir un elemento en bloque según el valor que se le asigne a la propiedad. Por defecto, la propiedad de "box-sizzing" tiene el valor de content-box.</p>
+    <h2>Valores de la propiedad box-sizzing</h2>
+    <ul>
+        <li>content-box</li>
+        <p class="text-list">Es el valor que tienen por defecto los elementos en bloque.</p>
+        <li>border-box</li>
+        <p class="text-list">Es el valor que permite al bloque mantener su tamaño definido (width y height) a pesar de tener padding, margin y border.</p>
+    </ul>
+
+    <h2>Ejemplo div con propiedad content-box</h2>
+    <div class="div-content-box"></div>
+    <p>Propiedades: <br>
+        background-color: cadetblue;<br>
+        width: 150px;<br>
+        height: 150px;<br>
+        margin: auto;<br>
+        padding: 20px;<br>
+        border: 10px black solid;<br>
+        Como se observa, el div es de 150x150px definidamente pero al tener padding, border y margin este se le suman los px a su tamaño definido y no terminamos de saber cual es el tamaño real del div.</p>
+    <h2>Ejemplo div con propiedad border-box</h2>
+    <div class="div-border-box"></div>
+    <p>Propiedades: <br>
+        background-color: cadetblue;<br>
+        width: 150px;<br>
+        height: 150px;<br>
+        margin: auto;<br>
+        padding: 20px;<br>
+        border: 10px black solid;<br>
+        Ahora como se observa, el div se mantiene en 150x150px gracias la propiedad box-sizzing: border-box. Esto nos facilita los cálculos de tamaño.</p>
+
+</body>
+</html>

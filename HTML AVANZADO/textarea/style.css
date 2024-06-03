@@ -1,0 +1,148 @@
+html{
+    font-family: sans-serif;
+    color: #ededed;
+}
+
+body{
+    background-color: #222;
+    padding:0;
+}
+
+h1, .temas, .subtemas{
+    color: #ededed;
+    font-size: 45px;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0 0 4px #ededed;
+}
+
+.temas{
+    font-size: 38px;
+}
+
+.subtemas{
+    font-size: 30px;
+    text-align: center;
+}
+
+.text-definition{
+    font-size: 30px;
+    text-align: center;
+}
+
+.title-form{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 4px #ededed;
+    margin-bottom: 20px;
+}
+
+form{
+    background-image: linear-gradient(#333, #222);
+    color: #ededed;
+    max-width: 700px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px #eeec;
+}
+
+.input-form{
+    padding: 12px;
+}
+
+input, textarea, select{
+    background-color: #222;
+    width: 100%;
+    font-size: 20px;
+    color: #ededed;
+    padding: 7px 15px;
+    border: none;
+    border-left: 3px #ededed solid;
+    border-bottom: 3px #ededed solid;
+    border-right: 0.2px #666 solid;
+    border-top: 0.2px #666 solid;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+a{
+    border: none;
+    background-color: transparent;
+}
+
+.text-web{
+    font-size: 27px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+}
+
+.input-btn{
+    width: 100%;
+    text-shadow: 0 0 2px #ededed;
+
+}
+
+textarea{
+    max-height: 100px;;
+    min-height: 30px;
+    min-width: 100%;
+    font-size: 15px;
+    resize: none;
+}
+
+li{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+
+.text-list{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navigation-pages{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: #ededed;
+    text-shadow: 0 0 4px #ededed;
+}
+
+label, a{
+    font-family: sans-serif;
+    font-size: 19px;
+    line-height: 40px;
+}
+
+::placeholder{
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+fieldset{
+    border: 1px #666 solid;
+    border-radius: 9px;
+    padding: 25px 40px;
+}
+
+legend{
+    font-size: 20px;
+    text-shadow: 0 0 2px #ededed;
+}
+
+.checkbox{
+    width: auto;
+}
+
+a{
+    color: #aaf9;
+}
+
+

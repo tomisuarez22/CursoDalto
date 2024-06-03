@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/CSS INTERMEDIO/images/css-3_732190.png">
+    <title>Responsive design</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="list__item"><a href="/CSS INTERMEDIO/index.html" class="item__link">Principal</a></li>
+                <li class="list__item"><a href="#" class="item__link">Link 2</a></li>
+                <li class="list__item"><a href="#" class="item__link">Link 3</a></li>
+                <li class="list__item"><a href="#" class="item__link">Link 4</a></li>
+                <li class="list__item"><a href="#" class="item__link">Link 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Responsive design</h1>
+    <h2 class="subtitle">¿Qué es el responsive design?</h2>
+    <p class="subtitle__text">El responsive design es un enfoque de diseño web que busca crear sitios web que proporcione al usuario una experiencia óptima y compatible con una amplia gama de tamaños de pantalla y dispositivos. El objetivo es asegurar que el contenido se vea bien y sea fácil de usar sin importar el dispositivo que el usuario esté utilizando.</p>
+
+    <h2 class="subtitle">Bloques y multimedia flexible</h2>
+    <div class="flexbox">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, pariatur cum nemo odit laboriosam nihil placeat veniam, nam aut voluptas accusantium reiciendis fugiat sit odio consequatur culpa sequi voluptates repudiandae.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, deleniti eius? Animi corporis odit itaque doloribus dignissimos dicta quis fugit. Blanditiis veniam nobis perferendis nisi eaque et adipisci voluptatem quis!
+    </div>
+
+    <h2 class="subtitle">max y min</h2>
+    <div class="flexbox test__one">
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati iste quis corrupti harum dolore eligendi, saepe recusandae praesentium! Alias, nostrum officia illo facilis eius exercitationem tempora a eveniet quasi suscipit.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae libero praesentium perspiciatis nihil! Iusto velit provident earum ad nostrum fugiat, quidem, aliquid rerum placeat saepe architecto maxime ut veritatis odit.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ab, eos alias atque laboriosam, pariatur corrupti itaque ea nostrum dicta saepe! Asperiores repudiandae minima error rerum nam quo aut aliquid!</div>
+    </div>
+    <p class="subtitle__text">
+        Las propiedades <b>max</b> y <b>min</b> tanto del ancho como el alto detallan cual va a ser el mínimo o máximo de ancho o alto que puede tener un elemento.
+    </p>
+    <h2 class="subtitle">Elementos multimedia flexibles</h2>
+    <h3 class="minititle">Imagenes</h3>
+    <img src="/HTML BASICO/img/FOTO MIA.jpeg">
+
+    <h3 class="minititle">Vídeos</h3>
+
+    <div class="box__video">
+        <video src="/HTML BASICO/videos/Madonna - La Isla Bonita (Official Video).mp4" muted autoplay></video>
+    </div>
+
+    <h2 class="subtitle">Atributos Srcset y Sizes</h2>
+    <p class="subtitle__text">
+        El atributo <b>srcset</b> especifica que recurso utilizar dependiendo de la resolución que tenga el usuario. <br>
+        El atributo <b>sizes</b> especifica una mediaquery, es decir a partir de que resolución que imagenes poner.
+    </p>
+    <h3 class="minititle">Sintáxis</h3>
+    <p class="subtitle__text"><b>srcset = "ubicaciónRecurso cantidadAnchow"</b><br><br>
+        Ejemplo: < img src="imagenPredeterminada.png" srcset:"imagenAlternativa.png 300w">
+    </p>
+    <p class="subtitle__text">sizes = "(max-width: 400px) 360px, (max-width: 600px) 600px, 900px" <br>
+    Es decir, si el tamaño del ancho es hasta 400px que ponga la imagen de 360px, si la resolución esta entre 400px y 600px colocar la imagen de 600px, si no si es mayor colocar la de 900px.</p>
+</body>
+</html>

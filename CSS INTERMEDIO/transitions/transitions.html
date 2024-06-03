@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/CSS INTERMEDIO/images/css-3_732190.png">
+    <title>Transiciones en CSS</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="menu__item"><a href="/CSS INTERMEDIO/index.html" class="item__link">Principal</a></li>
+                <li class="menu__item"><a href="/CSS INTERMEDIO/selectores/pseudoelementos.html" class="item__link">Pseudoelementos</a></li>
+                <li class="menu__item"><a href="/CSS INTERMEDIO/selectores/pseudoclases.html" class="item__link">Pseudoclases</a></li>
+                <li class="menu__item"><a href="" class="item__link link--button">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="title">Transiciones en CSS</h1>
+    <p class="text-web">Las transiciones en CSS nos permiten darle una mejor apariencia a nuestra página y experiencia para el usuario.</p>
+
+    <div class="box">
+        <h2 class="subtitle box__subtitle">CSS</h2>
+    </div>
+
+    <h2 class="subtitle">Propiedades de las transiciones</h2>
+    <p class="text-web">Existen distintas propiedades en CSS para definir y modificar nuestras transiciones.</p>
+    <ul class="list">
+        <li class="list__item">transition-property</li>
+        <p class="item__text">Especifica el nombre o nombres de las propiedades CSS a la que deberían aplicarse las transiciones.</p>
+        <li class="list__item">transition-duration</li>
+        <p class="item__text">Especifica la duración en la que sucederán las transiciones. Se puede especificar una única duración que se aplique a todas las propiedades durante la transición o valores múltiples que permitan a cada propiedad de transición un período de tiempo diferente.</p>
+        <li class="list__item">transition-delay</li>
+        <p class="item__text">Define el timepo de espera para dar inicio a la transición</p>
+        <li class="list__item">transition-timing-function</li>
+        <p class="item__text">Especifica la curva cúbica bézier que se usa para definir cómo se computan los valores intermedios para las propiedades.</p>
+        <h3 class="minititle">Posibles valores por defecto:</h3>
+        <ul class="list">
+            <li class="list__item">ease</li>
+            <p class="item__text">Valor predeterminado, es lineal.</p>
+            <li class="list__item">ease-in</li>
+            <p class="item__text">Arranca lento y finaliza fuerte.</p>
+            <li class="list__item">ease-in-out</li>
+            <p class="item__text">Arranca lento y termina lento.</p>
+            <li class="list__item">cubic-bezier</li>
+            <p class="item__text">Define personalizadamente una aceleración y tiempo en la transición.</p>
+        </ul>
+    </ul>
+
+    <h2 class="subtitle">Abreviación de las transiciones</h2>
+    <p class="text-web">Podemos abreviar las propiedades <b>transition-property, transition-duration y transition-timing-function</b> con tan solo usando la propiedad <b>transition</b>. Es decir:</p>
+    <h3 class="minititle center">transition: propiedad duración timing-function</h3>
+
+</body>
+</html>

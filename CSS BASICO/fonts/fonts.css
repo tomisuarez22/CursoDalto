@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Cualquier nombre";
+    src: url(/CSS\ BASICO/fonts/RobotoCondensed-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Cualquier nombre";
+    src: url(/CSS\ BASICO/fonts/RobotoCondensed-ExtraLight.ttf) format("truetype");
+    font-weight: 100;
+}

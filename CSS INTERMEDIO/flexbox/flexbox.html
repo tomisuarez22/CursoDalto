@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/CSS INTERMEDIO/images/css-3_732190.png">
+    <title>Flexbox</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="/CSS INTERMEDIO/index.html" class="item__link">Principal</a></li>
+                <li class="nav__item"><a href="/CSS BASICO/principal/index.html" class="item__link">CSS basico</a></li>
+                <li class="nav__item"><a href="/HTML BASICO/index.html" class="item__link">HTML basico</a></li>
+                <li class="nav__item"><a href="/HTML AVANZADO/index.html" class="item__link">HTML intermedio</a></li>
+                <li class="nav__item"><a href="/CSS INTERMEDIO/flexbox/practice.html" class="item__link link--button">Práctica Flexbox</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="title">Flexbox</h1>
+    <h2 class="subtitle">¿Qué es Flexbox?</h2>
+    <p class="text-web">Flexbox significa "Caja flexible" el cual es un módulo diseñado como un modelo y método que pueda ayudar a distribuir el espacio entre los ítems de un contenedor y mejorar las capacidades de alineación.</p>
+    <h2 class="subtitle">Los dos ejes de Flexbox</h2>
+    <p class="text-web">Cuando trabajamos con Flexbox, actúan dos ejes. El eje principal y el eje cruzado, donde el eje principal está definido por la propiedad <b>flex-direction</b>, y el eje cruzado es perpendicular a este.</p>
+
+    <h2 class="subtitle">Propiedad flex-direction</h2>
+    <p class="text-web">La propiedad flex-direction define al eje principal. Sus posibles valores son:</p>
+
+    <ul class="list">
+        <li class="list__item">row</li>
+        <p class="item__text">El eje principal va a ser definido en dirección a favor de la línea.</p>
+
+        <div class="flexbox row">
+            <div class="box red">1</div>
+            <div class="box green">2</div>
+            <div class="box blue">3</div>
+        </div>
+
+        <li class="list__item">row-reverse</li>
+        <p class="item__text">El eje principal va a ser definido en dirección opuesta de la línea.</p>
+
+        <div class="flexbox row-reverse">
+            <div class="box red">1</div>
+            <div class="box green">2</div>
+            <div class="box blue">3</div>
+        </div>
+        
+        <li class="list__item">column</li>
+        <p class="item__text">El eje principal va a ser definido en dirección a favor del bloque. (arriba hacia abajo).</p>
+
+        <div class="flexbox column">
+            <div class="box red">1</div>
+            <div class="box green">2</div>
+            <div class="box blue">3</div>
+        </div>
+
+        <li class="list__item">column-reverse</li><p class="item__text">El eje principal va a ser definido en dirección opuesta al bloque. (abajo hacia arriba).</p>
+
+        <div class="flexbox column-reverse">
+            <div class="box red">1</div>
+            <div class="box green">2</div>
+            <div class="box blue">3</div>
+        </div>
+    </ul>
+
+    <h2 class="subtitle">Propiedad flex-wrap</h2>
+    <p class="text-web">Permite controlar el comportamiento de los ítems cuando su contenedor ya no puede seguir mostrando los ítems por su tamaño. Sus posibles valores:</p>
+
+    <ul class="list">
+        <li class="list__item">nowrap</li>
+        <p class="item__text">Los elementos flex son distribuidos en una sola línea.</p>
+        <li class="list__item">wrap</li>
+        <p class="item__text">Los elementos flex son colocados en varias líneas.</p>
+        <li class="list__item">wrap-reverse</li>
+    </ul>
+
+    <h3 class="minititle">Abreviación flex-flow</h3>
+    <p class="text-web">Es una abreviación de las propiedades <b>flex-direction</b> y <b>flex-wrap</b>.</p>
+
+    <h2 class="subtitle">Alineación de los ítems</h2>
+
+    <h3 class="minititle">Propiedad justify-content</h3>
+    <p class="text-web">Define como se va a distribuir el espacio entre los ítems flex, a lo largo de su <b>eje principal</b>.</p>
+
+
+
+    <h3 class="minititle">Valores:</h3>
+
+    <ul class="list">
+        <li class="list__item">start</li>
+        <p class="item__text">Valor por defecto. Los elementos van de izquierda a derecha sin espacio entre ellos.</p>
+
+        <div class="flexbox start">
+            <div class="box red">1</div>
+            <div class="box green">2</div>
+            <div class="box blue">3</div>
+        </div>
+
+        <li class="list__item">end</li>
+        <p class="item__text">Los elementos van de derecha a izquierda sin espacio entre ellos.</p>
+
+        <div class="flexbox end">
+            <div class="box red">1</div>
+            <div class="box green">2</div>
+            <div class="box blue">3</div>
+        </div>
+
+        <li class="list__item">center</li>
+        <p class="item__text">Los elementos van al centro del eje principal sin espacio entre ellos.</p>
+
+        <div class="flexbox center">
+            <div class="box red">1</div>
+            <div class="box green">2</div>
+            <div class="box blue">3</div>
+        </div>
+
+        <li class="list__item">space-between</li>
+        <p class="item__text">El primer elemento está al ras con su borde inicial y el último elemento está al ras con su borde final, mientras que los demas elementos están distribuidos uniformemente dentro del contenedor y tienen un espacio entre ellos.</p>
+
+        <div class="flexbox space-between">
+            <div class="box red">1</div>
+            <div class="box green">2</div>
+            <div class="box blue">3</div>
+        </div>
+
+        <li class="list__item">space-around</li>
+        <p class="item__text">Los elementos están distribuidos uniformemente dentro del contenedor a lo largo del eje principal con un espacio igual entre elementos PERO el espacio entre el borde inicial y el primer elemento con el espacio entre el borde final y el ultimo elemento es distinto.</p>
+
+        <div class="flexbox space-around">
+            <div class="box red">1</div>
+            <div class="box green">2</div>
+            <div class="box blue">3</div>
+        </div>
+
+        <li class="list__item">space-evenly</li>
+        <p class="item__text">Los elementos se distribuyen uniformemente dentro del contenedor a lo largo del eje principal pero TODOS y absolutamente TODOS tienen el mismo espacio entre ellos.</p>
+
+        <div class="flexbox space-evenly">
+            <div class="box red">1</div>
+            <div class="box green">2</div>
+            <div class="box blue">3</div>
+        </div>
+
+    </ul>
+
+    <h3 class="minititle">Propiedad align-items</h3>
+    <p class="text-web">Controla la alineación de elementos en el <b>eje cruzado</b>. Esta propiedad se utiliza cuando hay solo UNA línea de elementos.</p>
+    <h3 class="minititle">Valores</h3>
+    <ul class="list">
+        <li class="list__item">stretch</li>
+        <p class="item__text">Si los elementos son más pequeños que el contenedor de alineación, estos se ampliarán igualmente para llenar el contenedor, respetando los límites de ancho y alto de los elementos.</p>
+        <li class="list__item">start</li>
+        <p class="item__text">Los artículos se colocan al ras entre sí hacia el borde inicial del contenedor.</p>
+        <li class="list__item">center</li>
+        <p class="item__text">Los artículos se colocan en el centro del contenedor.</p>
+        <li class="list__item">end</li>
+        <p class="item__text">Los artículos se colocan al ras entre sí hacia el borde final del contenedor.</p>
+    </ul>
+
+    <h3 class="minititle">Propiedad align-content</h3>
+    <p class="text-web">Establece la distribución del espacio entre y alrededor de los elementos de contenido a lo largo del <b>eje cruzado</b>.</p>
+
+    <h3 class="minititle">Valores</h3>
+    <ul class="list">
+        <li class="list__item">stretch</li>
+        <p class="item__text">Si los elementos son más pequeños que el contenedor de alineación, estos se ampliarán igualmente para llenar el contenedor, respetando los límites de ancho y alto de los elementos.</p>
+
+        <div class="flexbox vertical-box stretch">
+            <div class="box red">1</div>
+            <div class="box green">2</div>
+            <div class="box blue">3</div>
+        </div>
+
+        <li class="list__item">start</li>
+        <p class="item__text">Los artículos se colocan al ras entre sí hacia el borde inicial del contenedor.</p>
+
+        <div class="flexbox vertical-box start-vertical">
+            <div class="box red">1</div>
+            <div class="box green">2</div>
+            <div class="box blue">3</div>
+        </div>
+
+        <li class="list__item">center</li>
+        <p class="item__text">Los artículos se colocan en el centro del contenedor.</p>
+
+        <div class="flexbox vertical-box center-vertical">
+            <div id="order1" class="box red">1</div>
+            <div id="order2" class="box green">2</div>
+            <div id="order3" class="box blue">3</div>
+        </div>
+
+        <li class="list__item">end</li>
+        <p class="item__text">Los artículos se colocan al ras entre sí hacia el borde final del contenedor.</p>
+
+        <div class="flexbox vertical-box end-vertical">
+            <div class="box red">1</div>
+            <div class="box green">2</div>
+            <div class="box blue">3</div>
+        </div>
+    </ul>
+
+    <h2 class="subtitle">Propiedad align-self</h2>
+    <p class="text-web">Esta propiedad se aplica a los elementos flexibles y cuando está aplicada la propiedad <b>align-items</b>. Especifica la ubicación del elemento dentro del contenedor.</p>
+
+
+    <h2 class="subtitle">Propiedad order</h2>
+    <p class="text-web">Esta propiedad nos permite definir un orden entre  elementos flexibles.</p>
+
+
+    <h2 class="subtitle">Propiedad flex-grow</h2>
+    <p class="text-web">Esta propiedad permite a los elementos utilizar el espacio disponible del contenedor flexible para que estos aumenten su tamaño a medida que el contenedor lo aumenta. Mediante su valor definimos la cantidad de espacio disponible que puede ser utilizada por el elemento.</p>
+
+    <h2 class="subtitle">Propiedad flex-shrink</h2>
+
+    <p class="text-web">Define cuanto tamaño se va a encoger el elemento. Cuando el tamaño es menor, y no permitimos wrap, flexbox permite disminuir el ancho o alto de los elementos para que no se deformen. Esta disminución que sufren estos elementos podemos aumentarla o anularla mediante la propiedad flex-shrink.</p>
+
+    <h2 class="subtitle">Propiedad flex-basis</h2>
+    <p class="text-web">Definimos el tamaño base de un elemento. Cuando utilizamos flexbox esta propiedad reemplaza el min-width o min-heigth. Cuando los elementos sufren la disminución de su tamaño, la propiedad flex-basis establece el máximo de disminución y una vez que sobrepasa ese máximo debe de wrapearse.</p>
+
+    <h2 class="subtitle">Abreviación flex</h2>
+    <p class="text-web">Mediante la propiedad <b>flex</b> podemos abreviar las propiedades <b>Shrink Grow Basis</b>.</p>
+
+    <h2 class="subtitle">Propiedad gap</h2>
+    <p class="text-web">Esta propiedad define el espacio que va haber entre los elementos flexibles.</p>
+
+    <footer>
+        <h4 class="footer__title">Derechos reservados para @ Tomás Suarez - 2024</h4>
+    </footer>
+
+</body>
+</html>

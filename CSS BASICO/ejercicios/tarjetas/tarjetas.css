@@ -1,0 +1,65 @@
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.navigations-pages{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+.card{
+    width: 480px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 18px;
+    margin-left: 20px;
+    background: radial-gradient(#0007,#288d);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 9px 3px #0006;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.red{
+    background: radial-gradient(#0007,#822d);
+}
+
+.violet{
+    background: radial-gradient(#0007,#228d);
+}
+
+.img-card{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 9px 3px #0006;
+}
+
+.title-card{
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.subtitle-card{
+    font-size: 20px;
+    margin-top: -25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.description-card{
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+}

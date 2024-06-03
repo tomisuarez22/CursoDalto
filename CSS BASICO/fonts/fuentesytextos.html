@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS BASICO/principal/style.css">
+    <link rel="stylesheet" href="/CSS BASICO/fonts/fonts.css">
+    <title>Fuentes y textos</title>
+</head>
+<body>
+    <header>
+        <a href="/CSS BASICO/principal/index.html" class="navigations-pages"><< Volver a la página principal</a>
+    </header>
+
+    <h1>Fuentes y textos</h1>
+
+    <h2>Propiedades básicas de texto en CSS</h2>
+    <ul>
+        <li>color</li>
+        <p class="text-list">Define el color del texto. <span id="color-span">Ejemplo</span></p>
+        <li>font-family</li>
+        <p class="text-list">Define la fuente del texto. <span id="font-span">Ejemplo</span></p>
+        <li>font-size</li>
+        <p class="text-list">Define el tamaño del texto. <span id="size-span">Ejemplo</span></p>
+        <li>font-weight</li>
+        <p class="text-list">Define la tipografía de la fuente. <span id="weight-span">Ejemplo</span></p>
+        <li>font-style</li>
+        <p class="text-list">Define el tipo/modelo de texto. (italic, oblique, etc). <span id="style-span">Ejemplo</span></p>
+        <li>text-decoration</li>
+        <p class="text-list">Decora el texto permitiendo subrayados, tachados, etc. <span id="decoration-span">Ejemplo</span></p>
+        <li>text-align</li>
+        <p class="text-list">Define el alineado del texto. (center, left, right, justified).</p>
+        <li>line-height</li>
+        <p class="text-list">Define la distancia vertical entre las lineas del texto.</p>
+        <li>letter-spacing</li>
+        <p class="text-list">Define la distancia horizontal entre las letras del texto. <span id="spacing-span">Ejemplo</span></p>
+        <li>text-transform</li>
+        <p class="text-list">Transforma el texto en mayúsculas, minúsculas o capitalizado. <span id="transform-span">Ejemplo</span></p>
+        <li>text-shadow</li>
+        <p class="text-list">Personaliza el texto permitiendo agregar sombras, brillo, entre otras características.</p>
+    </ul>
+
+    <h2>Tipografías e importación de fuentes externas</h2>
+    <p>Podemos importar fuentes de manera externa en caso de que querramos utilizar una fuente terciarizada. Para ello hay 2 formas comunes para hacerlo.</p>
+    <ol>
+        <li>Importando el código HTML</li>
+        <p class="text-list">Debemos de copiar el código HTML de la fuente y pegarlo en el head de nuestro archivo HTML y asi podemos utilizarla luego en CSS como una fuente predeterminada.</p>
+        <p class="font-imported">"Este es un texto con una fuente importada mediante el código HTML en el head de mi archivo :D."</p>
+        <li>Creando un archivo CSS y asignar la tipografía manualmente</li>
+        <p class="text-list">Debemos descargar la fuente y sus tipografías, importarlas luego en un archivo CSS aparte y asignarles su nombre y tipografía correspondiente de manera manual para luego poder utilizarlas de manera normal en nuestro archivo style.css</p>
+        <p class="font-asigned">"Este es un texto con una fuente importada mediante un archivo de CSS aparte donde le asigné yo mismo la tipografía correspondiente y específica."</p>
+    </ol>
+    
+</body>
+</html>

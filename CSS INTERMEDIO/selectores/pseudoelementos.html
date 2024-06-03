@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/CSS INTERMEDIO/images/css-3_732190.png">
+    <title>Pseudo-elementos</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="menu__item"><a href="/CSS INTERMEDIO/index.html" class="item__link">Principal</a></li>
+                <li class="menu__item"><a href="/CSS INTERMEDIO/selectores/selectores.html" class="item__link">Selectores</a></li>
+                <li class="menu__item"><a href="/CSS INTERMEDIO/selectores/pseudoclases.html" class="item__link">Pseudoclases</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Pseudo-elementos</h1>
+    <p>Los <b>Pseudo-elementos</b> son selectores que permiten añadir estilos a una parte concreta de la página, como son los placeholder, los marcadores de lista, entre otros. A diferencia de las pseudoclases, la sintáxis de los pseudo-elementos comienzan con ::seguido de su nombre especial.</p>
+    <h2>Pseudo-elementos destacados</h2>
+    <ul>
+        <li>::first-letter</li>
+        <p class="text-list">Selecciona la primera letra de un título o parrafo y permite modificarla.</p>
+        <h3 class="example">Título</h3>
+        <li>::first-line</li>
+        <p class="text-list">Selecciona la primera línea de texto y permite modificarla.</p>
+        <p class="text-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, officiis in molestias inventore voluptas praesentium quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, recusandae iste? Soluta architecto natus ipsum consequatur nemo.</p>
+        <li>::selection</li>
+        <p class="text-list">Selecciona un elemento cuando este es seleccionado por el cursor.</p>
+        <p class="text-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, officiis in molestias inventore voluptas praesentium quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, recusandae iste? Soluta architecto natus ipsum consequatur nemo.</p>
+        <li>::placeholder</li>
+        <p class="text-list">Selecciona los placeholders y permite modificarlos.</p>
+        <form>
+            <input type="email" name="" id="" placeholder="ejemplo@correo.com.ar">
+        </form>
+        <li>::marker</li>
+        <p class="text-list">Selecciona los elementos marcadores y permite modificarlos.</p>
+        <ul>
+            <li class="list-example">EJEMPLASO</li>
+            <li class="list-example">EJEMPLASO</li>
+            <li class="list-example">EJEMPLASO</li>
+        </ul>
+        <li>::after</li>
+        <p class="text-list">Selecciona la ubicación posterior a un texto.</p>
+        <li>::before</li>
+        <p class="text-list">Selecciona la ubicación anterior a un texto.</p>
+    </ul>
+</body>
+</html>

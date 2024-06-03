@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Textarea y Labels</title>
+</head>
+<body>
+    <header>
+        <a href="/HTML AVANZADO/index.html" class="navigation-pages"><< Volver a la página principal</a>
+    </header>
+
+    <h1>Textarea y Labels</h1>
+
+    <form>
+        <h2 class="title-form">Formulario de contacto</h2>
+
+        <fieldset>
+
+            <legend>Información Básica</legend>
+
+            <div class="input-form">
+                <label for="Nombre">Nombre completo</label>
+                <input type="text" name="" id="Nombre" placeholder="Jhon Bovi">
+            </div>
+            <div class="input-form">
+                <label for="Email">Correo electrónico</label>
+                <input type="email" name="" id="Email" placeholder="Jhonbovi22@correo.com">
+            </div>
+    
+            <div class="input-form">
+                <label for="Gender">Género</label>
+                <select name="Gender" id="Gender">
+                    <option>Seleccione un género</option>
+                    <option value="women">Mujer</option>
+                    <option value="man">Hombre</option>
+                    <option value="no">No especificado</option>
+                </select>
+            </div>
+            
+        </fieldset>
+
+            <div class="input-form">
+            <label for="usertype">Tipo de usuario</label>
+            <select name="Tipo de usuario" id="usertype">
+                <option>Seleccione un tipo de usuario</option>
+                <option value="tercero">Tercero</option>
+                <option value="follower">Seguidor/a</option>
+                <option value="admin">Admin</option>
+            </select>
+            </div>
+    
+            <div class="input-form">
+            <label for="referent">Referente</label>
+            <input list="referent" placeholder="Ingresa un referente">
+                <datalist id="referent">
+                    <option value="Tomás Suarez">CEO de la web</option>
+                    <option value="Priscila Vergara">COCEO de la web</option>
+                    <option value="Soy Dalto">Creador de contenido</option>
+                    <option value="Nadie">Absolutamente nadie</option>
+                </datalist>
+            </input>
+        </div>
+
+        
+
+        <div class="input-form">
+            <label for="Mensaje">Mensaje</label>
+            <textarea name="" id="Mensaje" placeholder="Deja tu mensaje..." maxlength="200"></textarea>
+        </div>
+
+        <div class="input-form">
+            <label for="terms">Acepto los <a href="/HTML AVANZADO/enlaces/enlaces.html">términos y condiciones</a></label>
+            <input type="checkbox" class="checkbox" id="terms">
+        </div>
+
+        <div class="input-form">
+            <input type="submit" value="Enviar" class="input-btn">
+        </div>
+
+        
+    </form>
+
+    <h2 class="temas">Labels</h2>
+    <p class="text-web">Un label es una etiqueta que sirve para detallar el título o los datos que se tienen que ingresar en un input.</p>
+
+    <h2 class="temas">TextArea y sus propiedades</h2>
+    <p class="text-web">La etiqueta <b>textarea</b> es un input personalizable que permite ingresar cualquier tipo de dato en un espacio agrandado.</p>
+
+    <h2 class="temas">Propiedades de textarea en CSS</h2>
+
+    <ul>
+        <li>Resize</li>
+        <p class="text-list">Sirve para definir en que posición desplazar el textarea. Puede ser horizontal, vertical o que no se desplace.</p>
+    </ul>
+
+    <h2 class="temas">Posibles atributos de textarea en HTML</h2>
+
+    <ul>
+        <li>Placeholder</li>
+        <p class="text-list">Detalla un texto transparente para que sirva como guía.</p>
+
+        <li>Readonly</li>
+        <p class="text-list">Al definir este booleano, le sacamos al usuario el permiso de modificar el textarea.</p>
+
+        <li>Disabled</li>
+        <p class="text-list">Al definir este booleano, le sacamos al usuario el permiso de modificar el textarea y directamente no se puede seleccionar ni tampoco se cuenta a la hora de enviar al servidor.</p>
+
+        <li>Max-length</li>
+        <p class="text-list">Este atributo permite definir un máximo de caracteres.</p>
+
+        <li>Row</li>
+        <p class="text-list">Este atributo define la cantidad de lineas de texto que va a tener de forma inicial el textarea.</p>
+    </ul>
+
+    <h2 class="temas">Select, datalist y options</h2>
+
+    <h3 class="subtemas">Select</h3>
+    <p class="text-web">La etiqueta <b>select</b> nos permite crear una lista selectiva para el usuario conectada con distintos ítems mediante la etiqueta <b>option</b>.</p>
+    <h3 class="subtemas">Ejemplo</h3>
+    <div class="input-form">
+        <select name="" id="">
+            <option value="">Opcion 1</option>
+            <option value="">Opcion 2</option>
+            <option value="">Opcion 3</option>
+        </select>
+    </div>
+    
+
+    <h3 class="subtemas">Datalist</h3>
+    <p class="text-web">La etiqueta <b>datalist</b> nos permite crear una lista selectiva a través de entrada de texto para el usuario conectada con distintos resultados mediante la etiqueta <b>option</b>. <br>Las etiquetas <b>datalist</b> tienen que ser agregada dentro de una etiqueta <b>input</b> cuyo atributo obligatorio debe ser <b>list</b>.</p>
+    <h3 class="subtemas">Ejemplo</h3>
+
+    <div class="input-form">
+        <input list="listaprueba">
+            <datalist id="listaprueba">
+                <option value="Opcion 1">Esta es la opcion 1</option>
+                <option value="Opcion 2">Esta es la opcion 2</option>
+                <option value="Opcion 3">Esta es la opcion 3</option>
+            </datalist>
+        </input>
+    </div>
+
+    <p class="text-web">La etiqueta <b>datalist</b> debe estar conectada mediante su atributo <b>id</b> con el atributo <b>list</b> de el input.</p>
+    
+
+
+</body>
+</html>

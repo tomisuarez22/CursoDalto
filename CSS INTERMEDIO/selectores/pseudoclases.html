@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/CSS INTERMEDIO/images/css-3_732190.png">
+    <title>Pseudo-clases</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="menu__item"><a href="/CSS INTERMEDIO/index.html" class="item__link">Principal</a></li>
+                <li class="menu__item"><a href="/CSS INTERMEDIO/selectores/selectores.html" class="item__link">Selectores</a></li>
+                <li class="menu__item"><a href="/CSS INTERMEDIO/selectores/pseudoelementos.html" class="item__link">Pseudoelementos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Pseudo-clases</h1>
+    <p>Son tipos de selectores de elementos en CSS, selecciona un estado específico de un elemento a través de palabras claves.</p>
+    <h2>Tipos de Pseudo-clases</h2>
+    <ul>
+        <li>:hover</li>
+        <p class="text-list">Selecciona y modifica un elemento cuando el cursor se le pasa por encima de este elemento.</p>
+        <h3 class="ejemplo">EJEMPLO</h3>
+        <li>:active</li>
+        <p class="text-list">Selecciona y modifica un elemento cuando le damos click a ese elemento.</p>
+        <h3 class="ejemplo-active">EJEMPLO</h3>
+        <li>:first-child</li>
+        <p class="text-list">Selecciona el primer elemento hijo de un elemento.</p>
+        <ul>
+            <li class="elemento-particular">Elemento 1</li>
+            <li class="elemento-particular">Elemento 2</li>
+            <li class="elemento-particular">Elemento 3</li>
+        </ul>
+        <li>:last-child</li>
+        <p class="text-list">Selecciona el último elemento hijo de un elemento.</p>
+        <ul>
+            <li class="elemento-particular1">Elemento 1</li>
+            <li class="elemento-particular1">Elemento 2</li>
+            <li class="elemento-particular1">Elemento 3</li>
+        </ul>
+        <li>:nth-child(numeroElemento)</li>
+        <p class="text-list">Selecciona un elemento hijo de un elemento a elección. Si el valor del numero a seleccionar es 2n, 3n... etc... Selecciona uno si uno no, o dos si y dos no, etc.</p>
+        <ul>
+            <li class="elemento-particular2">Elemento 1</li>
+            <li class="elemento-particular2">Elemento 2</li>
+            <li class="elemento-particular2">Elemento 3</li>
+        </ul>
+        <li>:not(.clase)</li>
+        <p class="text-list">Asigna las propiedades al elemento seleccionado menos a el elemento que tenga la clase que asignamos en ().</p>
+
+        <li>:empty</li>
+        <p class="text-list">Selecciona al elemento y lo modifica en caso de que esté vacío.</p>
+
+        <li>:checked</li>
+        <p class="text-list">Selecciona los checkbox que ya estén marcados.</p>
+        <li>:link</li>
+        <p class="text-list">Selecciona los enlaces que aún no fueron visitados.</p>
+        <li>:visited</li>
+        <p class="text-list">Selecciona los enlaces que ya fueron visitados.</p>
+
+        <li>:valid</li>
+        <p class="text-list">Selecciona los inputs válidos.</p>
+        <form>
+            <input type="email" id="email" placeholder="correo@gmail.com">
+            <input type="submit" class="submit">
+        </form>
+        <li>:invalid</li>
+        <p class="text-list">Selecciona los inputs inválidos.</p>
+
+
+        <li>:is()</li>
+        <p class="text-list">Esta pseudo-clase selecciona determinados elementos hijos de un elemento padre.</p>
+        <li>:where()</li>
+        <p class="text-list">Esta pseudo-clase selecciona determinados elementos hijos de un elemento padre pero con menos especifidad.</p>
+
+        <li>:has()</li>
+        <p class="text-list">Esta pseudo-clase modifica a un elemento padre en caso de tener un determinado elemento hijo que colocaríamos dentro del ().</p>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    font-size: 50px;
+    font-weight: initial;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2{
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    text-align: center;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+li{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 125px;
+    text-align: center;
+    text-wrap: balance;
+}
+
+#color-span{
+    color:blue;
+}
+
+#font-span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#size-span{
+    font-size: 25px;
+}
+
+#weight-span{
+    font-weight: bold;
+}
+
+#style-span{
+    font-style: italic;
+}
+
+#decoration-span{
+    text-decoration: line-through;
+}
+
+#spacing-span{
+    letter-spacing: 20px;
+}
+
+#transform-span{
+    text-transform: uppercase;
+}
+
+.text-list{
+    text-align: left;
+    font-size: 20px;
+}
+
+.navigations-pages{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.font-imported{
+    font-family: Pixelify Sans;
+    font-size: 30px;
+}
+
+.font-asigned{
+    font-family: Cualquier nombre;
+    font-weight: 100;
+    font-size: 30px;
+}

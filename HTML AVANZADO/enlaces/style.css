@@ -1,0 +1,55 @@
+html{
+    color: #66ae;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #ddbf;
+}
+
+h1, .temas, .subtitles{
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 1px 1px 5px #444f;
+}
+
+.text-web{
+    color: #222;
+    font-weight: bolder;
+    font-size: 27px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.text-list{
+    color: #222f;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li{
+    color: #000;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.temas{
+    font-size: 40px;
+}
+
+.navigation-pages{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px #444f;
+    color: #66ae;
+    text-decoration: none;
+}
+
+.subtitles{
+    font-size: 30px;
+
+}

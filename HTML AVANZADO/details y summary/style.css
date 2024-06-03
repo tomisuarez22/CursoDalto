@@ -1,0 +1,49 @@
+html{
+    color: #ededed;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #386c5f;
+}
+
+h1, .temas{
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 2px 2px 9px #333;
+    
+}
+
+.temas{
+    font-size: 40px;
+}
+
+.text-web{
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+}
+
+summary{
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: normal;
+    text-shadow: 0 0 9px #333;
+}
+
+details{
+    font-size: 20px;
+    padding: 20px;
+    font-style: italic;
+    border: 1px #ededed solid;
+}
+
+.navigation-pages{
+    font-size: 24px;
+    color: #ededed;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 0 0 6px #ededed;
+}

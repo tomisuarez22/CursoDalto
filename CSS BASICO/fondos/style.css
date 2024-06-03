@@ -1,0 +1,127 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+li{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.subtitle-clasification{
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-web{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-list{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.div-example{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/cfcd19177744781.Y3JvcCw5MzgsNzMzLDAsMTE.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.navigations-pages{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.sintaxis-background{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.subtitle{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.div-gradient{
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    padding-top: 200px;
+    border-bottom: 5px #f00c solid;
+    margin: auto;
+    background: linear-gradient(transparent, #f009);
+    border-radius: 40px;
+}
+
+.aclaration{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.title-div{
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: white;
+    
+}
+
+.radial{
+    background: radial-gradient(#fff9, #bf9f);
+    border-color: #bd6f;
+}
+
+.radial-div{
+    color: #bd6f;
+}
+
+.box-shadow{
+    width: 420px;
+    background-color: #eee9;
+    margin: auto;
+    box-shadow: 0px 0px 10px 3px #0004;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+.subtitle-div{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0px 0px 5px #fb37;
+}
+
+.text-div{
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -10px;
+    text-shadow: 0px 0px 5px #fb37;
+}
+
+.img-tomas{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 6px #0004;
+}
+

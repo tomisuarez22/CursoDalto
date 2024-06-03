@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+    background-color: #ededed;
+    color: #222;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* HEADER */
+
+
+
+header{
+    background-color: #19274e;
+}
+
+.main-nav ul{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-nav li{
+    list-style: none;
+}
+
+.main-nav a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    padding: 30px;
+    transition: background-color 100ms;
+}
+
+.main-nav a:hover{
+    background-color: #eac195;
+}
+
+/* MAIN */
+
+footer, main, aside, header, nav, div{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-wrapper{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+.main-wrapper p{
+    margin-top: 15px;
+}
+
+main, aside{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.second-navbar{
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.second-navbar ul{
+    padding: 0;
+}
+
+.second-navbar li{
+    list-style-type: none;
+}
+
+.second-navbar a{
+    display: inline-block;
+    color: #3f132f;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.second-navbar a:hover{
+    opacity: 0.8;
+}
+
+main{
+    min-width: 300px;
+    text-align: center;
+    flex-grow: 2;
+}
+
+.extra-main{
+    max-width: 400px;
+    text-align: center;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #19274e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: auto;
+}
+
+
+/* MEDIA QUIERIES */
+
+@media screen and (max-width: 1000px){
+    .extra-main{
+        display: none;
+    }
+    .second-navbar{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main-nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav a{
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .main-nav li{
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .main-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+}

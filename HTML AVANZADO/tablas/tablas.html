@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tablas en HTML</title>
+</head>
+<body>
+    <header>
+        <a href="/HTML AVANZADO/index.html" class="navigation-pages"><< Volver a la página principal</a>
+    </header>
+
+    <h1>Tablas</h1>
+    <p>Las tablas nos permiten mostrar datos tabulares. Estas se crean mediante la etiqueta <b>"table"</b>. Y para agregar filas lo hacemos mediante la etiqueta <b>"tr"</b> y le asignamos columnas mediante la etiqueta <b>"td"</b>.</p>
+    <h2>EJEMPLO</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Tomás</td>
+                <td>Suarez</td>
+                <td>20</td>
+            </tr>
+    
+            <tr>
+                <td>Priscila</td>
+                <td>Vergara</td>
+                <td>19</td>
+            </tr>
+    
+            <tr>
+                <td>Norma</td>
+                <td>Leon</td>
+                <td>67</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <p>Las tablas pueden tener atributos para combinar filas y columnas como es <b>"coldspan"</b> y el valor que ocupa sería el de la cantidad de espacios que se desea que ocupe.</p>
+
+    <h2>Semántica en las tablas</h2>
+    <p>Su semántica se utiliza a partir de las siguientes etiquetas:</p>
+    <ul>
+        <li>thead</li>
+        <p class="text-list">Dentro de esta etiqueta va el encabezado de la tabla.</p>
+        <li>tbody</li>
+        <p class="text-list">Dentro de esta etiqueta va el cuerpo de la tabla.</p>
+        <li>tfoot</li>
+        <p class="text-list">Dentro de esta etiqueta va el pie de la tabla.</p>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #654d38;
+    font-family: sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+header, .main-wrapper, footer{
+    width: 100%;
+}
+
+
+/* HEADER */
+
+header{
+    background-color: #c5a890;
+}
+
+.main-nav{
+
+}
+
+.main-nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-nav li{
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+}
+
+.main-nav a{
+    display: block; /* Cambia a flex para que flex properties funcionen */
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 7px #222;
+    padding: 25px;
+    font-size: 26px;
+    text-decoration: none;
+    transition: background-color 200ms;
+}
+
+.main-nav a:hover{
+    background-color: #957b64;
+}
+
+/* MAIN */
+
+h1, h2{
+    text-shadow: 0 0 6px #222;
+}
+
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;
+    max-width: 1024px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+main, aside{
+    background-color: #957b64;
+    padding: 20px;
+}
+
+aside{
+
+}
+
+.second-nav{
+    min-width: 200px;
+}
+
+.second-nav nav{
+
+}
+
+.second-nav ul{
+
+}
+
+.second-nav a{
+    display: inline-block;
+    color: #f7b47a;
+    text-decoration: none;
+    text-shadow: 0 0 10px #222;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.second-nav a:hover{
+    opacity: 0.7;
+}
+
+.second-nav li{
+    list-style: none;
+}
+
+main{
+    margin-bottom: 10px;
+}
+
+.ad{
+    display: none;
+    
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: auto;
+    background-color: #c5a890;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 0 0 10px #222;
+}
+
+/* MEDIA QUIERIES */
+
+
+
+@media screen and (min-width: 1024px){
+    .ad{
+        flex-basis: 0;
+        display: block;
+        min-width: 300px;
+        flex-shrink: 2;
+    }
+} 
+
+@media screen and (min-width: 1024px){
+    .main-wrapper{
+        flex-direction: row;
+    }
+
+    .main-nav ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
